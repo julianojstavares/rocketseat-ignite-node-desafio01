@@ -119,7 +119,7 @@ app.delete('/todos/:id', checksExistsUserAccount, (request, response) => {
 
   try {
 
-      todoIndex = user.todos.findIndex(todo => todo.id === id) ?? -1;
+      todoIndex = user.todos.findIndex(todo => todo.id === id);
 
       console.log(todoIndex);
 
